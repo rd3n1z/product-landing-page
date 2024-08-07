@@ -1,0 +1,222 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+body {
+    height: 200vh;
+    color: #003366;
+    background-color: #F5F5F5;
+}
+
+/* Header and Navigation */
+#header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #F5F5F5;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-bar {
+    width: 40%;
+    font-size: larger;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    background-color: #F5F5F5;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Form */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+    margin-top: 150px;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.bold {
+    font-weight: 900;
+}
+
+#email {
+    width: 220px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid #003366;
+    padding: 0 15px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#email::placeholder {
+    color: #888;
+    font-style: italic;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#email:focus {
+    border-color: #FFA500;
+    box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+}
+
+button, #submit {
+    width: 150px;
+    height: 40px;
+    background-color: #FFA500;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px; /* Increase font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+button:hover, #submit:hover {
+    background-color: #d88c00;
+    color: rgb(241, 241, 241);
+}
+
+/* Navigation Links */
+.nav-link {
+    color: #003366;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #FFA500;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link:active {
+    background-color: #d88c00;
+}
+
+/* Price Boxes */
+.price-section {
+    width: 80%;
+    height: 400px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.price-box {
+    width: 30%;
+    height: 100%;
+    border: none; /* Remove border */
+    background-color: #fff; /* White background for cleaner look */
+    color: #333; /* Dark text color for readability */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px; /* Add padding for spacing */
+    text-align: center;
+}
+
+.price-box h3 {
+    color: #003366; /* Dark blue text color */
+    margin-bottom: 10px;
+    font-size: 24px; /* Adjust font size */
+}
+
+.price-box p {
+    margin: 5px 0;
+}
+
+.price-box input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #FFA500;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.price-box input[type="submit"]:hover {
+    background-color: #d88c00;
+}
+
+/* Sections */
+.info-section {
+    width: 50%;
+    height: 100vh;
+    margin: 20px auto;
+    display: flex;
+}
+
+.images {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.images img {
+    width: 80px;
+    height: 80px;
+}
+
+.content-boxes {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.video-section {
+    width: 50%;
+    margin: 30px auto;
+    border: 1px solid black;
+}
